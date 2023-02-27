@@ -24,8 +24,7 @@ if(pantalla <= 500){
                 console.log(element)
                 
             }
-            hijo.classList.toggle("contacto-visible")
-            e.target.classList.toggle("contacto")
+            //hijo.classList.toggle("contacto-visible")
         })
     })
 }
