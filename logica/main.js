@@ -33,8 +33,14 @@ if(pantalla <= 500){
 
 botonesReferencia.forEach(e=>{
     e.addEventListener("click", (e)=>{
+        
         const padre = e.target.parentNode;
         padre.children[2].classList.toggle("ref-visible")
-        e.target.textContent = "cerrar" 
+        if(e.target.textContent === "cerrar"){
+            e.target.textContent = "Referencia"    
+        }else{
+            e.target.textContent = "cerrar"
+        }
+         
     })
 })
